@@ -1,0 +1,54 @@
+#messages {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+	.gradient-background {
+		@include gradient-background($secondary-azur-transparent, $secondary-color-azur);
+	}
+	p {
+		font-size: 10px;
+		padding-top: 2px;
+  	   padding-bottom: 5px;
+  	   padding-right: 15px;
+  	   padding-left: 10px;
+	}
+	h1 {
+		font-size: 12.5px;
+		padding-top: 2px;
+  		padding-bottom: 3px;
+  		padding-right: 15px;
+  		padding-left: 10px;		
+
+	}
+	textarea {    
+      height: 600x;
+      width: 80%;
+      margin-bottom: 15px;
+	}
+   label {
+      @include gradient-background-reverse($secondary-color-azur, $secondary-azur-transparent);
+      padding: 4px 0 4px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: left;
+      width: 80%;
+      margin: 7px 0;
+   }
+   input {
+      width: 80%;
+      margin-bottom: 15px; 
+   }
+   button {
+      background-color: $secondary-color-yellow;
+   }
+}
+.link-msg_inbox {
+	  position: relative;
+   td {
+      color: $primary-color-teal;
+      position: absolute;
+      top: 12px;
+      left: 18px;
+      font-size: 22px;
+   }
+}

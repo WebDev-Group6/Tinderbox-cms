@@ -1,0 +1,32 @@
+button {
+  font-family: "eveleth-regular";
+  border: none;
+  color: $primary-color-teal;
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.backbutton {
+  @include gradient-background-reverse($secondary-color-yellow, $secondary-yellow-transparent);
+  text-align: left;
+  float: left;
+  border: none;
+  font-family: "eveleth-regular"; 
+  padding: 10px 15px;
+}
+.pagebuttons {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+#group-button {
+  background-color: #ffd962; 
+}
+
+#personal-button {
+  background-color: #8bc7b9; 
+}
+
+

@@ -1,0 +1,52 @@
+.gradient-background {
+	@include gradient-background($secondary-rosa-transparent, $secondary-color-rosa);
+}
+
+a.button {
+  -webkit-appearance: button; }
+
+.menu-button {
+  font-family: "eveleth-regular";
+  line-height: 1.6;
+  text-align: right;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: $primary-color-teal;
+  span {
+    font-family: "eveleth-regular";
+    width: 100%;
+    &:before {
+      font-family: "font-awesome";
+      float: right;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+  img {
+    width: 81%;
+    float: right;
+  }
+  
+}
+
+#button {
+  &-schedule {
+    @include gradient-background($secondary-yellow-transparent, $secondary-color-yellow);
+  }
+  &-qrcode {
+    @include gradient-background($secondary-rosa-transparent, $secondary-color-rosa);
+  }
+  &-map {
+    @include gradient-background($secondary-azur-transparent, $secondary-color-azur);
+  }
+  &-information {
+    @include gradient-background($secondary-yellow-transparent, $secondary-color-yellow);
+  }
+  &-messages {
+    @include gradient-background($secondary-rosa-transparent, $secondary-color-rosa);
+  }
+}

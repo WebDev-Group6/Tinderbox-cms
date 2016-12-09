@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "eveleth-regular";
+  src: url(../fonts/eveleth-regular.ttf); }
+@font-face {
+  font-family: "eveleth-thin";
+  src: url(../fonts/eveleth-thin.ttf); }
+@font-face {
+  font-family: "brown";
+  src: url(../fonts/brown-regular.otf); }
+@font-face {
+  font-family: "font-awesome";
+  src: url(../fonts/fontawesome-webfont.ttf); }
+h1, h2 {
+  font-family: "eveleth-regular"; }
+
+h3, h4, h5 {
+  font-family: "eveleth-thin";
+  line-height: 1.6; 
+  font-size: 20px;
+}
+
+a {
+  color: $secondary-color-azur;
+  font-family: "eveleth-thin";
+  &:visited {
+    color: $secondary-color-azur;
+  }
+  &:visited {
+    color: $secondary-color-azur;
+  }
+
+}
+
+strong {
+  font-family: "eveleth-thin";
+  color: $secondary-color-azur;
+}

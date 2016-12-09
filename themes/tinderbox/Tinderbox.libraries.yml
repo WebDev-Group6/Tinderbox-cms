@@ -1,0 +1,7 @@
+global-styling:
+   version: VERSION
+   css:
+     theme:
+       includes/bootstrap/css/bootstrap.css: {}
+       assets/css/style.css: {}
+       assets/fonts/font-awesome/css/font-awesome.min.css: {}

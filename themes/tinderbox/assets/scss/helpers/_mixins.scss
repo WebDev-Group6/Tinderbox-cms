@@ -1,0 +1,25 @@
+@mixin gradient-background( $background-color-transparent: $primary-teal-transparent, $background-color: $primary-color-teal) {
+	background: $background-color;
+	background: -webkit-linear-gradient(left, $background-color-transparent, $background-color);
+	background: -o-linear-gradient(right, $background-color-transparent, $background-color);
+	background: -moz-linear-gradient(right, $background-color-transparent, $background-color);
+	background: linear-gradient(to right, $background-color-transparent, $background-color);
+	width: 100%;
+	margin-bottom: 0;
+}
+@mixin gradient-background-reverse($background-color: $primary-color-teal, $background-color-transparent: $primary-teal-transparent) {
+	background: $background-color;
+	background: -webkit-linear-gradient(right, $background-color-transparent, $background-color);
+	background: -o-linear-gradient(left, $background-color-transparent, $background-color);
+	background: -moz-linear-gradient(left, $background-color-transparent, $background-color);
+	background: linear-gradient(to left, $background-color-transparent, $background-color);
+	width: 100%;
+	margin-bottom: 0;
+}
+@mixin box-sizing ($box-sizing) {
+	box-sizing: $box-sizing;
+	webkit-box-sizing: $box-sizing;
+	-moz-box-sizing: $box-sizing;
+	-ms-box-sizing: $box-sizing; 
+  	
+}

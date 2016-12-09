@@ -1,0 +1,25 @@
+#schedule {
+	h3 {
+		font-family: "eveleth-regular";
+		font-size: 18px;
+	}
+  h4 {
+    font-family: "eveleth-thin";
+    &:before {
+      font-family: "font-awesome";
+      margin-right: 5px;
+    }
+  }
+}
+
+.rounded-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  img {
+  	width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+name: Tinderbox
+description: A CMS theme made for Tinderbox volunteer app.
+version: 1.0.0
+type: theme
+core: 8.x
+libraries:
+  - tinderbox/global-styling
+regions:
+  primary_menu: primary_menu
+  headline: headline
+  header: header
+  content: content
+  footer: Footer

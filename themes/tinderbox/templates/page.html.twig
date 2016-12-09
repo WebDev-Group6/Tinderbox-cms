@@ -1,0 +1,29 @@
+{{ page.primary_menu }}
+
+<div id="headline" class="headline container-fluid">
+	<div class="row">
+		<div id="back-link" class="col-xs-4 nopadding"></div>
+		<div id="pagetitle" class="col-xs-8 nopadding">
+			{% if page.headline %}
+			<h1>
+				{{ page.headline }}
+			</h1>
+			{% endif %}
+		</div>
+	</div>
+	<div class="row">
+		<div id="single-line" class="col-xs-12 nopadding"></div>
+	</div>
+</div>
+<div id="main">
+	{{ page.content }}
+</div>
+{% if page.footer %}
+	<footer>
+	{{ page.footer }}
+	</footer>
+{% endif %}
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="<?php echo base_url('assets/js/store.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/script.js'); ?>"></script>
+<script src="<?php echo base_url('assets/js/main.js'); ?>"></script>
