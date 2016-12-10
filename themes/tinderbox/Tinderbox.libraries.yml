@@ -5,3 +5,10 @@ global-styling:
        includes/bootstrap/css/bootstrap.css: {}
        assets/css/style.css: {}
        assets/fonts/font-awesome/css/font-awesome.min.css: {}
+global-script:
+  js:
+    assets/js/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

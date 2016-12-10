@@ -5,6 +5,7 @@ type: theme
 core: 8.x
 libraries:
   - tinderbox/global-styling
+  - tinderbox/global-script
 regions:
   primary_menu: primary_menu
   headline: headline

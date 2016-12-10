@@ -17,8 +17,10 @@
     <js-placeholder token="{{ placeholder_token }}">
   </head>
   <body{{ attributes.addClass(body_classes) }}>
-    {{ primary_menu }}
+    {{ page_top }}
+    {{ page.primary_menu }}
     {{ page }}
+    {{ page_bottom }}
     <js-bottom-placeholder token="{{ placeholder_token }}">
   </body>
 </html>

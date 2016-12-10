@@ -141,17 +141,17 @@ button {
     top: 50px;
     right: 0;
     z-index: 3; }
-    .dropdown-content .dropdown-link {
+    .dropdown-content .dropdown-link a {
       color: #fff9f4;
       padding: 25px 15px;
       text-decoration: none;
       display: block;
       font-family: "eveleth-thin";
       font-size: 22px; }
-      .dropdown-content .dropdown-link:before {
+      .dropdown-content .dropdown-link a:before {
         font-family: fontawesome;
         float: right; }
-      .dropdown-content .dropdown-link:last-child {
+      .dropdown-content .dropdown-link a:last-child {
         color: #f18879; }
 
 .show {

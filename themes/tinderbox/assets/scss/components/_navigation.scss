@@ -24,18 +24,20 @@
     right: 0;
     z-index: 3; 
     .dropdown-link {
-      color: $primary-color-beige;
-      padding: 25px 15px;
-      text-decoration: none;
-      display: block;
-      font-family: "eveleth-thin"; 
-      font-size: 22px;
-      &:before {
-        font-family: fontawesome;
-        float: right;
-      }
-      &:last-child {
-        color: $secondary-color-rosa;
+      a {
+        color: $primary-color-beige;
+        padding: 25px 15px;
+        text-decoration: none;
+        display: block;
+        font-family: "eveleth-thin"; 
+        font-size: 22px;
+        &:before {
+          font-family: fontawesome;
+          float: right;
+        }
+        &:last-child {
+          color: $secondary-color-rosa;
+        }
       }
     }
   }
