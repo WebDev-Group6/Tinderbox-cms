@@ -83,6 +83,33 @@ body {
         font-size: 20px;
         padding-top: 4px; }
 
+.views-row {
+  background-color: #043540;
+  color: #fff9f4;
+  padding: 10px 15px 10px 15px;
+  margin-bottom: 15px; }
+  .views-row .views-field-name {
+    width: 100%;
+    position: relative; }
+    .views-row .views-field-name a {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-right: 22px;
+      pointer-events: none;
+      cursor: default; }
+    .views-row .views-field-name:before {
+      right: 0;
+      font-size: 30px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+
+.views-field-description__value {
+  display: none;
+  font-size: 16px;
+  padding-top: 10px; }
+
 button {
   font-family: "eveleth-regular";
   border: none;
@@ -363,8 +390,9 @@ a.button {
       right: 15px; }
   .frontmenu-item-wrapper .single-line {
     position: absolute;
-    right: -12px;
-    bottom: 11px; }
+    right: -6px;
+    bottom: 11px;
+    width: 81%; }
 
 #button-schedule {
   background: #ffd962;
