@@ -40,3 +40,33 @@
     }
   }
 }
+.views-row {
+  background-color: $primary-color-teal;
+  color: $primary-color-beige;
+  padding: 10px 15px 10px 15px;
+  margin-bottom: 15px;
+  .views-field-name {
+    width: 100%;
+    position: relative;
+    a {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-right: 22px;
+        pointer-events: none;
+    cursor: default;
+      }
+      &:before {
+        right: 0;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+  }
+}
+.views-field-description__value {
+  display: none;
+    font-size: 16px;
+    padding-top: 10px;
+}

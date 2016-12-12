@@ -14,3 +14,8 @@ window.onclick = function(event) {
     }
   }
 };
+jQuery('.views-field-name').on('click', function() {
+          $parent_box = jQuery(this).closest('.views-row');
+          $parent_box.siblings().find('.views-field-description__value').slideUp();
+          $parent_box.find('.views-field-description__value').slideToggle(400, 'swing');
+      });
