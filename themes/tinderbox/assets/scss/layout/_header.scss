@@ -2,19 +2,20 @@ header {
   width: 100%;
   height: 50px;
   background-color: $primary-color-teal;
-  position: fixed;
-  top: 0;
-  z-index: 999; 
+  z-index: 999;
+  display: block;
+  box-sizing: border-box;
+}
+#logo-tinderbox {
+  text-align: center;
 }
 .logo-header {
-  float: left;
   height: 50px;
+     margin-left: auto;
+    margin-right: auto;
   img {
   	height: 30px;
-    width: 100%;
-  	margin-top: 10px; 
-    margin-left: auto;
-    margin-right: auto;
+  	margin-top: 10px;
   }
 }
 
@@ -24,5 +25,5 @@ header {
   width: auto;
   color: $primary-color-beige;
   font-size: 30px;
-  margin-top: 10px; 
+  margin-top: 10px;
 }

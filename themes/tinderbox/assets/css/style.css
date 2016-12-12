@@ -104,7 +104,8 @@ button {
   float: left;
   border: none;
   font-family: "eveleth-regular";
-  padding: 10px 15px; }
+  padding: 10px 15px;
+  color: #043540 !important; }
 
 .pagebuttons {
   width: 80%;
@@ -123,7 +124,9 @@ button {
   padding: 10px 15px;
   font-size: 20px;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 0;
+  float: right; }
   .dropbtn:hover, .dropbtn:focus {
     background-color: #043540;
     outline: none;
@@ -151,8 +154,6 @@ button {
       .dropdown-content .dropdown-link a:before {
         font-family: fontawesome;
         float: right; }
-      .dropdown-content .dropdown-link a:last-child {
-        color: #f18879; }
 
 .show {
   display: block; }
@@ -249,19 +250,20 @@ header {
   width: 100%;
   height: 50px;
   background-color: #043540;
-  position: fixed;
-  top: 0;
-  z-index: 999; }
+  z-index: 999;
+  display: block;
+  box-sizing: border-box; }
+
+#logo-tinderbox {
+  text-align: center; }
 
 .logo-header {
-  float: left;
-  height: 50px; }
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto; }
   .logo-header img {
     height: 30px;
-    width: 100%;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto; }
+    margin-top: 10px; }
 
 #user {
   float: right;
@@ -339,28 +341,30 @@ footer {
 a.button {
   -webkit-appearance: button; }
 
-.menu-button {
-  font-family: "eveleth-regular";
-  line-height: 1.6;
-  text-align: right;
-  border: none;
-  border-radius: 0px;
-  cursor: pointer;
-  font-size: 22px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: #043540; }
-  .menu-button span {
+.frontmenu-item-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .frontmenu-item-wrapper a {
     font-family: "eveleth-regular";
-    width: 100%; }
-    .menu-button span:before {
+    line-height: 1.6;
+    text-align: right;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #043540;
+    padding-right: 45px; }
+    .frontmenu-item-wrapper a:before {
       font-family: "font-awesome";
-      float: right;
-      margin-left: 15px;
-      margin-right: 15px; }
-  .menu-button img {
-    width: 81%;
-    float: right; }
+      position: absolute;
+      right: 15px; }
+  .frontmenu-item-wrapper .single-line {
+    position: absolute;
+    right: -12px;
+    bottom: 11px; }
 
 #button-schedule {
   background: #ffd962;

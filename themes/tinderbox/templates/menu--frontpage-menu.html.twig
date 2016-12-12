@@ -25,32 +25,21 @@
   @see http://twig.sensiolabs.org/doc/tags/macro.html
 #}
 {{ menus.menu_links(items, attributes, 0) }}
-<div id="dropdown" class="col-xs-2 nopadding">
+
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
   {% if items %}
-    {% if menu_level == 0 %}
-      <div class="dropdown">
-        <button onclick="toggleDropdown()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-        <div id="myDropdown" class="dropdown-content" {{ attributes }}>
-    {% else %}
-      <div class="dropdown">
-        <button onclick="toggleDropdown()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-        <div id="myDropdown" class="dropdown-content">
-    {% endif %}
     {% for item in items %}
-      <div class="dropdown-link" {{ item.attributes }}>
-        {{ link(item.title, item.url) }}
-        {% if item.below %}
-          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
-        {% endif %}
-      </div>
+        <div {{ attributes }} class="row" >
+          <div {{ item.attributes }} class="frontmenu-item-wrapper">
+            {{ link(item.title, item.url) }}
+            <img src="{{ path('<front>') }}themes/tinderbox/assets/img/tinderbox_single_line.svg" class="single-line">
+            {% if item.below %}
+              {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+            {% endif %}
+          </div>
+        </div>
     {% endfor %}
-    </div>
-  </div>
+
   {% endif %}
-</div>
 {% endmacro %}
-
-
-      </div>

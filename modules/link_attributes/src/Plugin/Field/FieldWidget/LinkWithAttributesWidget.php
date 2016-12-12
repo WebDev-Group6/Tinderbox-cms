@@ -27,7 +27,7 @@ class LinkWithAttributesWidget extends LinkWidget {
       'placeholder_url' => '',
       'placeholder_title' => '',
       'enabled_attributes' => [
-        'id' => FALSE,
+        'id' => TRUE,
         'name' => FALSE,
         'target' => TRUE,
         'rel' => TRUE,

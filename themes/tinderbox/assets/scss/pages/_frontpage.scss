@@ -5,7 +5,9 @@
 a.button {
   -webkit-appearance: button; }
 
-.menu-button {
+
+.frontmenu-item-wrapper {
+  a {
   font-family: "eveleth-regular";
   line-height: 1.6;
   text-align: right;
@@ -16,21 +18,21 @@ a.button {
   padding-top: 15px;
   padding-bottom: 15px;
   color: $primary-color-teal;
-  span {
-    font-family: "eveleth-regular";
-    width: 100%;
-    &:before {
-      font-family: "font-awesome";
-      float: right;
-      margin-left: 15px;
-      margin-right: 15px;
-    }
+  padding-right: 45px;
+  &:before {
+    font-family: "font-awesome";
+    position: absolute;
+    right: 15px;
   }
-  img {
-    width: 81%;
-    float: right;
+}
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .single-line {
+    position: absolute;
+    right: -12px;
+    bottom: 11px;
   }
-  
 }
 
 #button {

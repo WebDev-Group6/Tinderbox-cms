@@ -5,6 +5,8 @@
   font-size: 20px;
   border: none;
   cursor: pointer;
+  margin-bottom: 0;
+  float: right;
   &:hover, &:focus {
     background-color: $primary-color-teal;
     outline: none;
@@ -34,9 +36,6 @@
         &:before {
           font-family: fontawesome;
           float: right;
-        }
-        &:last-child {
-          color: $secondary-color-rosa;
         }
       }
     }
